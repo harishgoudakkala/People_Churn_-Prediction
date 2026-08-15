@@ -1,16 +1,16 @@
 # Customer Churn Prediction & Analysis
 
-Machine learning project for analyzing telecom customer data and predicting customer churn using Python and Scikit-learn.
+A machine learning project that analyzes telecom customer data and predicts customer churn using Python and Scikit-learn.
 
 ## Overview
 
-This project covers the complete ML workflow:
+The project follows an end-to-end machine learning workflow:
 
 - Data cleaning and preprocessing
 - Exploratory Data Analysis (EDA)
 - Feature encoding and scaling
-- Model training and evaluation
-- Comparison of multiple classification algorithms
+- Model training
+- Model evaluation and comparison
 
 ## Technologies
 
@@ -24,22 +24,37 @@ This project covers the complete ML workflow:
 
 ## Dataset
 
-The project uses the **Telco Customer Churn** dataset containing customer demographics, services, contract details, charges, and churn status.
+The project uses the **Telco Customer Churn** dataset, containing customer demographics, services, contract details, billing information, and churn status.
 
-**Target:** `Churn` — `Yes` / `No`
+**Target Variable:** `Churn` (`Yes` / `No`)
 
 ## Workflow
 
-1. **Data Cleaning** – Handle missing values, convert data types, remove zero-tenure records and `customerID`.
-2. **EDA** – Analyze churn patterns across customer demographics, services, contracts, and payment methods.
-3. **Preprocessing** – Apply categorical encoding and standardize numerical features.
-4. **Modeling** – Train and compare five classification models:
-   - KNN
+1. **Data Cleaning**  
+   Convert data types, handle missing values, remove zero-tenure records, and drop `customerID`.
+
+2. **Exploratory Data Analysis**  
+   Analyze churn patterns across demographics, services, contracts, payment methods, and billing information.
+
+3. **Preprocessing**  
+   Encode categorical features and standardize numerical features.
+
+4. **Model Training**  
+   Train and compare:
+   - K-Nearest Neighbors (KNN)
    - Decision Tree
    - Random Forest
    - AdaBoost
    - Gradient Boosting
-5. **Evaluation** – Compare models using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and ROC-AUC.
+
+5. **Model Evaluation**  
+   Evaluate models using:
+   - Accuracy
+   - Precision
+   - Recall
+   - F1-Score
+   - Confusion Matrix
+   - ROC-AUC
 
 ## Project Structure
 
@@ -48,24 +63,44 @@ customer-churn-prediction-ml/
 ├── Churn_EDA_&_ML.ipynb
 ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
 └── README.md
+```
 
-How to Run
+## How to Run
+
+### 1. Clone the Repository
+
+```bash
 git clone <your-repository-url>
 cd customer-churn-prediction-ml
+```
+
+### 2. Install Dependencies
+
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+```
+
+### 3. Start Jupyter Notebook
+
+```bash
 jupyter notebook
+```
 
-Open Churn_EDA_&_ML.ipynb and run the cells sequentially.
+### 4. Run the Project
 
-Key Learning
-Python-based data analysis
-EDA and data visualization
-Feature preprocessing
-Classification algorithms
-Ensemble learning
-Model evaluation and comparison
-Author
+Open `Churn_EDA_&_ML.ipynb` and run the cells sequentially from top to bottom.
 
-Akkala Harish Goud
+## Key Learning
 
-GitHub | LinkedIn
+- Python for data analysis
+- Exploratory Data Analysis (EDA)
+- Data preprocessing and feature scaling
+- Classification algorithms
+- Ensemble learning
+- Model evaluation and comparison
+
+## Author
+
+**Akkala Harish Goud**
+
+[GitHub](https://github.com/harishgoudakkala) • [LinkedIn](https://www.linkedin.com/in/akkala-harish-goud-916bb1242/)
